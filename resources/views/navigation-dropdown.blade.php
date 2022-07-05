@@ -5,8 +5,10 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <x-jet-application-mark class="block h-9 w-auto" />
+
+                    <a  href="{{ route('dashboard') }}">
+                        <img alt="Qries" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/BBC_News.svg/1200px-BBC_News.svg.png"
+                             width=70" height="70">
                     </a>
                 </div>
 

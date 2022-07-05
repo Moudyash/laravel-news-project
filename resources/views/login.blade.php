@@ -1,7 +1,8 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+            <img alt="Qries" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/BBC_News.svg/1200px-BBC_News.svg.png"
+                 width=150" height="70">
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -31,12 +32,6 @@
                     <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                 </label>
             </div>
-            <div class="block mt-4">
-                <label for="remember_me" class="flex items-center">
-                    <input id="remember_me" type="checkbox" class="form-checkbox" name="remember">
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
 
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
@@ -49,7 +44,6 @@
                     {{ __('Login') }}
                 </x-jet-button>
             </div>
-
         </form>
     </x-jet-authentication-card>
 </x-guest-layout>

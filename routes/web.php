@@ -42,9 +42,8 @@ use Illuminate\Support\Facades\Route;
 //     return $author->comments;
 // });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/register', function () {
+    return view('register');})->name('register');;
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
